@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/contact.css">
+
+    <!-- Aos Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <div id="line"></div>
+    <nav class="position-fixed bg-orange2 w-100" data-aos="fade-down">
+        <div class="container position-relative d-flex justify-content-between align-items-center py-0 z-3">
+            <div class="logo fw-bold">
+                <a href="/index.html">
+                    <img style="width: 50px;" src="/imgs/logo.png" alt="">
+                </a>
+            </div>
+            <div class="d-flex gap-3">
+                <button class="contact  bg-transparent align-self-center">Contact Us</button>
+                <button class="menu rounded-circle d-flex justify-content-center align-items-center"
+                    onclick="openMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="black" class="bi bi-list"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="nav-links w-100 position-fixed top-0 left-0 z-0">
+            <div class="container d-flex justify-content-around align-items-center flex-wrap">
+                <div class="menu-left position-relative d-flex justify-content-center w-100">
+                    <p class="menu-left-word position-absolute fw-bold text-white ">Menu</p>
+                    <ul>
+                        <li><a href="/projects.html" class="sectionTitle text-white fw-bold d-block position-relative">porjects</a>
+                        </li>
+                        <li><a href="" class="sectionTitle text-white fw-bold d-block position-relative">About Us</a>
+                        </li>
+                        <li><a href="/contact.html" class="sectionTitle text-white fw-bold d-block position-relative">Contact</a>
+                        </li>
+                        <li><a href="/privcay.html" class="sectionTitle text-white fw-bold d-block position-relative">Hosting</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-right text-white mt-5">
+                    <p class="textOrange">hello@baunfire.com</p>
+                    <p class="textOrange">+963 965560905</p>
+                    <p class="textOrange">syria , Damascus</p>
+                    <ul class="social-media list-unstyled mt-4">
+                        <li><a href="" class="text-white">Facebook</a></li>
+                        <li><a href="" class="text-white">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="one">
+        <div class="container">
+            <div class="row justify-content-center justify-content-md-between">
+                <div class="col-md-6 col-10 order-md-0 order-1">
+                    <form action="">
+                        <input type="text" placeholder="Your Name" name="" id="">
+                        <input type="Email" placeholder="Email">
+                        <input type="Phone" placeholder="Phone">
+                        <div class="d-flex justify-content-between">
+                            <p class="text-black-50">What's your budget?</p>                            
+                            <select class="d-block" name="" id="">
+                                <option value="">Under 10,000$</option>
+                                <option value="">10,000$ - 20,000$</option>
+                                <option value="">20,000$ - 40,000$</option>
+                                <option value="">+40,000$</option>
+                                <option value="">Not sure</option>
+                            </select>
+                        </div>
+                        <textarea name="" placeholder="tell us a little bit about your porject" id=""></textarea>
+                        <button class="ms-4 bg-transparent  position-relative border-0">Send Now</button>
+                    </form>
+                </div>
+                <div class="col-md-5 col-10 d-flex flex-column">
+                    <h1 class="mb-4">SEND US A MESSAGE AND SOMEONE WILL GET BACK TO YOU SHORTLY.</h1>
+                    <img src="/imgs/contact1.png" class="position- rellax" data-rellax-speed="2" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <footer class="position-relative">
+        <div class="news-line bg-orange py-2 overflow-hidden d-md-block d-none">
+            <div class="news-p text-white position-relative d-flex justify-content-around gap-3">
+                <p>we don’t just do projects, we partner with product owners</p>
+                <p>Since our clients stay with us for so long, we must be doing things right</p>
+            </div>
+        </div>
+        <div class="container position-relative">
+            <div class="row align-items-center justify-content-center  flex-wrap" style="min-height: 260px;">
+                <div class="col-md-6 col-10">
+                    <div class="rows d-flex justify-content-center gap-5">
+                        <div class="left">
+                            <h3 class="text-white fw-bold">Reach Us</h3>
+                            <p class="mt-4 textOrange">email@gmail.com</p>
+                            <p class="textOrange">+963 965560905</p>
+                        </div>
+                        <div class="right">
+                            <h3 class="text-white fw-bold">Follow Us</h3>
+                            <a href="#" class="text-white mt-4  textOrange d-block">Facebook</a>
+                            <a href="#" class="text-white textOrange">Instagram</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-10 ps-lg-5">
+                    <h3 class="fw-bold">Explore</h3>
+                    <ul class="list-unstyled d-flex gap-4 mt-4 mb-0">
+                        <li><a href="" class="">Projects</a></li>
+                        <li><a href="" class="">About Us</a></li>
+                        <li><a href="" class="">Contact</a></li>
+                    </ul>
+                    <p>Damascus,syria</p>
+                </div>
+            </div>
+        </div>
+        <img src="/imgs/footerStars.png" class="position-absolute stars"
+            style="width: 150px;right: 40px; top:100px; z-index: index 1;;" alt="">
+        <img src="/imgs/FooterCircle.png" class="position-absolute bottom-0" style="width: 150px;" alt="">
+        <div class="position-absolute bottom-0 d-flex gap-4 text-white" style="left: 20%;">
+            <a class="textGray" style="font-size: .7rem;" href="">Privacy</a>
+            <a class="textGray" style="font-size: .7rem;" href="">Policy</a>
+            <p class="textGray" style="font-size: .7rem;" href="">CopyRight@2023</p>
+        </div>
+    </footer>
+
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+
+<script src="/js/base.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+<script src="/js/MagicScroll.js"></script>
+<!-- this is indector helps you to see the point -->
+
+<!-- Aos library -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+
+
+</html>
