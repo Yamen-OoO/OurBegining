@@ -31,3 +31,22 @@ pos.addEventListener('mousemove', function (e) {
     pos.style.setProperty('--x', e.clientX + 'px')
     pos.style.setProperty('--y', e.clientY + 'px')
 })
+
+
+
+
+let gototop = document.querySelector("#gototop")
+gototop.onclick = function(){
+    window.scrollTo(0,0)
+    gototop.style.display = "none"
+
+}
+
+window.addEventListener('scroll',()=>{
+    if(window.scrollY >= 1000){
+        gototop.style.display ="flex"
+    }
+    else{
+        gototop.style.display ="none"
+    }
+})

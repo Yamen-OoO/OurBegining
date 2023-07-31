@@ -1,4 +1,5 @@
 var controller = new ScrollMagic.Controller()
+// ^ all these for the index page
 // this means ... to tell the browser ..use the scroll bar and trigger animation
 
 //^section one text left
@@ -47,7 +48,7 @@ var oursecne3 = new ScrollMagic.Scene({
     triggerElement : "section.one .text-right p",
     // duration:500,
     duration:'0%',
-    // reverse:false // once
+    reverse:false // once
 }).setClassToggle('section.one .orange-box ' , 'fade-orangeBoxToRight' ) 
 // .addIndicators({
 //     name:'fade scene',
@@ -112,24 +113,3 @@ var oursecne = new ScrollMagic.Scene({
     // colorEnd : "blue"
 // })
 .addTo(controller) 
-
-
-
-
-
-// // i controll when to add the class ... usign the triggerElement , and setClassToggle
-
-
-// // you can add indicators ... its usefull when we want to debbug our complicated scenes
-// // you can use options (object) within the indecators 
-
-
-// // you put ending trigger ... to hide it back ...the calss removed ...when you have durations
-// // duration .. is not a good for ((((responsive devices ))))... so you put 100%..100 view screen
-// // trigerHook ..so you can chage the postion of the indecator 0... is to top/// 1 bottom ,, 0.5 ,, 0.9
-
-// // reverse works only with no duration
-
-
-
-

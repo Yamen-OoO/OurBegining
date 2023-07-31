@@ -17,12 +17,12 @@ header p:nth-last-child(2) {
     width: 100%;
 }
 
-header button {
+header a {
     padding: 10px;
     width: 150px;
 }
 
-header button::before {
+header a::before {
     content: '';
     position: absolute;
     left: 0px;
@@ -35,13 +35,13 @@ header button::before {
     transition: .5s ease;
 }
 
-header button:hover::before {
+header a:hover::before {
     border-radius: 0px;
     width: 160px;
 }
 
-header img.G {
-    right: 200px;
+header img.s {
+    right: 230px;
     width: 500px;
 }
 
@@ -50,9 +50,9 @@ header .img {
     object-fit: contain;
 }
 
-header img.E {
+header img.p {
     bottom: 0;
-    right: 100px;
+    right: 50px;
     width: 200px;
 }
 
@@ -146,7 +146,7 @@ section.one .orange-box::before {
     border-style: dashed;
     border-width: 3px;
     z-index: 0;
-    animation: rotate 70s linear infinite;
+    animation: rotate 50s linear infinite;
 }
 
 @keyframes rotate {
@@ -189,6 +189,9 @@ section.tow img {
     transform: translateX(-50%);
     transition: .5s ease;
 }
+section.tow ul li{
+    cursor:default;
+}
 
 #tringle1 {
     top: 10%;
@@ -219,7 +222,7 @@ section.three p {
     transition: .5s ease;
 }
 
-section.three img.O {
+section.three img.o {
     top: 200px;
     transform: scale(-1);
     right: 0;
@@ -228,7 +231,7 @@ section.three img.O {
     z-index: -1;
 }
 
-section.three img.T {
+section.three img.t {
     left: 0;
     transform: scale(-1);
     max-width: 600px;

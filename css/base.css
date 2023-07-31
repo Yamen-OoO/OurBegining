@@ -94,6 +94,37 @@ body {
     width: 0px;
 }
 
+#gototop{
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-weight: bold;
+    display: none;
+
+}
+#gototop::before{
+    content:'';
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    height: 100%;
+    border: 1px solid white ;
+    background-color: var(--OrangeText);
+    z-index: -1;
+    border-radius: 50%;
+}
+
+
 
 
 
@@ -104,7 +135,7 @@ body {
 
 nav {
     /* for the whole nav section */
-    z-index: 100;
+    z-index: 1000000;
     padding: 10px 0;
     /* background-color: transparent; */
     transition: 2s ease;
@@ -133,6 +164,7 @@ nav .menu {
     height: 50px;
     border: 1px solid white;
     background-color: white;
+    z-index: 100000;
 }
 
 nav .menu svg {

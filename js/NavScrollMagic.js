@@ -6,14 +6,13 @@ let whiteSections = document.querySelectorAll(".whiteSection")
 
 onload=()=>{
     ChangeNav()
-    // alert("done loading")
 }
 
 
 function ChangeNav(){
     function MakeSenece(){
         whiteSections.forEach(ele =>{
-            console.log(ele)
+            // console.log(ele.clientHeight)
             let object = {
                 triggerElement: ele,
                 duration:ele.clientHeight,
@@ -33,13 +32,13 @@ function ChangeNav(){
                 startaproject.classList.remove('textGray')
                 // console.log('hello im out')
             })
-            .addIndicators({
-                name:'fade scene white',
-                colorTrigger : 'red',
-                indent:100,
-                colorStart : "red",
-                colorEnd : "blue"
-            })
+            // .addIndicators({
+            //     name:'fade scene white',
+            //     colorTrigger : 'red',
+            //     indent:100,
+            //     colorStart : "red",
+            //     colorEnd : "blue"
+            // })
             .addTo(Navcontroller) 
         })
     }

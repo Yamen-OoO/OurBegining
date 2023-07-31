@@ -1,5 +1,5 @@
 let pyramid = document.querySelector(".pyramid")
-console.log(pyramid)
+// console.log(pyramid)
 
 function MakePieces(){
     let bottom = 0
@@ -19,8 +19,8 @@ function MakePieces(){
         bottom+= 50
         left+= 6
         i++
-        console.log(piece.getAttribute("data-left"))
-        console.log(i)
+        // console.log(piece.getAttribute("data-left"))
+        // console.log(i)
     },400)
 }
 MakePieces()
