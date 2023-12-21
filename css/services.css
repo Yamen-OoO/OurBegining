@@ -1,5 +1,5 @@
 *{
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 header {
     min-height: 100vh;
@@ -20,20 +20,20 @@ header .container h1 {}
 
 
 section.one .box {
-    min-height: 90vh;
+    min-height: 70vh;
     place-content: center;
     gap: 100px;
     padding: 0 10px;
 }
-
+/* 
 section.one .box p {
     font-size: 1.6rem;
     z-index: 1111;
     
-}
+} */
 
-section.one .text-right ,
-section.one .text-left  {
+.text-right ,
+.text-left  {
     z-index: 10;
     transition: all 1s ease;
     /* width: min(100%, 800px); */
@@ -118,46 +118,79 @@ section.tow {
 }
 
 
-section.tow img.stars2 {
+img.stars2 {
     position: absolute;
     top: 100px;
     right: 5%;
     z-index: -1;
 }
 
-section.tow img.stars5 {
+img.stars5 {
     position: absolute;
     z-index: -1;
-    width: 200px;
-    height: 200px;
-    left: -100px;
+    width: 150px;
+    height: 150px;
+    right: 60px;
+    bottom: 100px;
 }
-
-section.tow img.rectangle {
+img.stars3 {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    z-index: -1;
+    /* width: 200px; */
+    /* height: 200px; */
+    left: 60px;
+    bottom: 400px;
 }
 
 
-
-.project-img {
-    max-width: 380px;
+.project {
+    max-width: 400px;
     width: 100%;
-    height: 440px;
+    height: 360px;
+    /* min-height: 350px; */
+    /* height: 100%; */
     transition: .5s ease;
+    /* overflow: hidden; */
+}
+.project-img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.project::before{
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 100%; 
+    width: 100%;
+    z-index: 111;
+    padding: 10px;
+    /* font-weight: bold; */
+
+}
+.projects-row:nth-child(1) .project:nth-child(1)::before{
+    content: 'Web Application';
+}
+.projects-row:nth-child(1) .project:nth-child(2)::before{
+    content: 'Custom UI&UX';
+}
+.projects-row:nth-child(2) .project:nth-child(1)::before{
+    content: 'Hosting';
+}
+.projects-row:nth-child(2) .project:nth-child(2)::before{
+    content: 'Mobile Application';
 }
 
-.project-img-small {
+/* .project-img-small {
     max-width: 300px;
     width: 100%;
     height: 390px;
     transition: .5s ease;
-}
+} */
 
-.project-img:hover {
-    /* transform: translateZ(-20px); */
-}
 
 .projects-row {
     margin-bottom: 200px;
@@ -166,64 +199,64 @@ section.tow img.rectangle {
 }
 
 
-@media (max-width:767px) {
-    .project-img {
-        max-width: 340px;
+@media (max-width:991px) {
+    .project {
+        max-width: 330px;
         height: 400px;
     }
-
-    .project-img-small {
+/* 
+    .project {
         max-width: 300px;
         height: 350px;
-    }
+    } */
 }
 
 @media (max-width:700px) {
-    .project-img {
-        max-width: 300px;
-        height: 360px;
+    .project {
+        max-width: 270px;
+        height: 270px;
     }
 
-    .project-img-small {
+    /* .project {
         max-width: 260px;
         height: 310px;
-    }
+    } */
 }
 
 @media (max-width:600px) {
-    .project-img {
-        max-width: 260px;
-        height: 300px;
+    .project {
+        max-width: 220px;
+        height: 220px;
     }
 
-    .project-img-small {
+    /* .project {
         max-width: 220px;
         height: 270px;
-    }
+    } */
 }
 
 @media (max-width:500px) {
-    .project-img {
-        max-width: 180px;
-        height: 260px;
+    .project {
+        max-width: 170px;
+        height: 170px;
     }
 
-    .project-img-small {
+    /* .project {
         max-width: 140px;
         height: 210px;
-    }
+    } */
 }
 
 @media (max-width:400px) {
-    .project-img {
+    .project {
         max-width: 150px;
-        height: 230px;
+        height: 150px;
     }
 
-    .project-img-small {
+    /* .project-img {
         max-width: 120px;
         height: 170px;
-    }
+    } */
 }
 
 
@@ -234,6 +267,13 @@ section.tow img.rectangle {
 .product-box {
     max-width: 400px;
     width: 100%;
-    height: 400px;
-    background-image: url(/imgs/project1.png);
+    max-height: 400px;
+    height: 100%;
+    /* background-image: url(/imgs/project1.png); */
 }
+/* @media (max-width:575px) { */
+    /* .product-box {
+        max-width: 350px;
+        max-height: 350px;
+    }
+} */
