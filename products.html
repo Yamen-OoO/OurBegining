@@ -13,7 +13,7 @@
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
     <link rel="stylesheet" href="/css/css minified/base.min.css">
-    <link rel="stylesheet" href="/css/services.css">
+    <link rel="stylesheet" href="/css/products.css">
     <!--^ Aos Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -21,7 +21,219 @@
 
 
 <body>
-    
+    <div id="line"></div>
+    <button id="gototop">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-arrow-up"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
+        </svg>
+    </button>
+
+    <nav class="position-fixed bg-transparent w-100" data-aos="fade-down" fade-aos-delay="300">
+        <div class="container position-relative d-flex justify-content-between align-items-center py-0 z-3">
+            <div class="logo fw-bold">
+                <a href="/">
+                    <img loading="lazy" style="width: 50px;" src="/imgs/logo.png" alt="company logo">
+                </a>
+            </div>
+            <div class="d-flex gap-3">
+                <a href="/contact.html" class="contact  bg-transparent align-self-center">Contact Us</a>
+                <button class="menu rounded-circle d-flex justify-content-center align-items-center"
+                    onclick="openMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="black" class="bi bi-list"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                </button>
+            </div>
+            <a href="/contact.html" class="position-absolute startaproject text-white bg-transparent border-0"><span
+                    class="textOrange2">Start</span> a Project</a>
+        </div>
+
+
+        <div class="nav-links w-100 position-fixed top-0 left-0 z-0">
+            <div class="container d-flex justify-content-around align-items-center flex-wrap">
+                <div class="menu-left position-relative d-flex justify-content-center w-100">
+                    <p class="menu-left-word position-absolute fw-bold text-white ">Menu</p>
+                    <ul>
+                        <li><a href="/index.html"
+                                class="sectionTitle text-white fw-bold d-block position-relative">Home</a>
+                        </li>
+                        <li><a href="/projects.html"
+                                class="sectionTitle text-white fw-bold d-block position-relative">Projects</a>
+                        </li>
+                        <li><a href="/contact.html"
+                                class="sectionTitle text-white fw-bold d-block position-relative">Contact</a>
+                        </li>
+                        <li><a href="/privcay.html"
+                                class="sectionTitle text-white fw-bold d-block position-relative">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-right text-white mt-5">
+                    <p class="textOrange">kareem@spotcode.net</p>
+                    <p class="textOrange">+963 993277655</p>
+                    <p class="textOrange">syria , Damascus</p>
+                    <ul class="social-media list-unstyled mt-4">
+                        <li><a href="https://www.facebook.com/profile.php?id=100095150770088&notif_id=1690595498692617&notif_t=page_user_activity&ref=notif"
+                                class="text-white">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/spotcode8/" class="text-white">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <img src="/imgs/SC.png"  class="SC position-absolute" alt="">
+
+    <header class="position-relative blackSection overflow-hidden d-grid " style="place-content: center;">
+        <div class="container z-1 ">
+            <div class="row">
+                <div class="col col-7 py-5">
+                    <p class="textOrange sectionLittleP mb-2">Welcome To SpodtCode Products Page</p>
+                    <h5 class="sectionTitle2 text-black mt-5">Our Passion</h5>
+                    <p class="textGray sectionLittleP mb-5">Our company offers a wide range of high-quality portfolios that are perfect for professionals,
+                        students, and anyone in need of a stylish and functional way to organize their documents.</p>
+                    <button class="bg-transparent  position-relative border-0">Send Now</button>
+                </div>
+                <div class="col col-5">
+                    <div class="box position-relative">
+                        <img src="/imgs/project3.png" class="object-fit-cover w-100 h-100" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="one py-5 position-relative blackSection">
+        <div class="container">
+            <div class="faq text-white">
+                <h1 class="my-4 sectionTitle2 z-1 position-relative">FAQ</h1>
+                <div class="questions-cotainer p-3 d-flex flex-column gap-3">
+                    <div class="question p-3">
+                        <div class="d-flex justify-content-between">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, incidunt?</p>
+                            <a class="text-white" data-bs-toggle="collapse" href="#collapseExample1" role="button"
+                                aria-expanded="false" aria-controls="collapseExample">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white"
+                                    class="bi bi-arrow-bar-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5M8 6a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L7.5 12.293V6.5A.5.5 0 0 1 8 6" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="collapse" id="collapseExample1">
+                            <div class="card card-body bg-transparent mt-3">
+                                Some placeholder content for the collapse component. This panel is hidden by default but
+                                revealed when the user activates the relevant trigger.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question p-3">
+                        <div class="d-flex justify-content-between">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, incidunt?</p>
+                            <a class="text-white" data-bs-toggle="collapse" href="#collapseExample2" role="button"
+                                aria-expanded="false" aria-controls="collapseExample">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white"
+                                    class="bi bi-arrow-bar-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5M8 6a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L7.5 12.293V6.5A.5.5 0 0 1 8 6" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="collapse" id="collapseExample2">
+                            <div class="card card-body bg-transparent mt-3">
+                                Some placeholder content for the collapse component. This panel is hidden by default but
+                                revealed when the user activates the relevant trigger.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question p-3">
+                        <div class="d-flex justify-content-between">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, incidunt?</p>
+                            <a class="text-white" data-bs-toggle="collapse" href="#collapseExample3" role="button"
+                                aria-expanded="false" aria-controls="collapseExample">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white"
+                                    class="bi bi-arrow-bar-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5M8 6a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L7.5 12.293V6.5A.5.5 0 0 1 8 6" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="collapse" id="collapseExample3">
+                            <div class="card card-body bg-transparent mt-3">
+                                Some placeholder content for the collapse component. This panel is hidden by default but
+                                revealed when the user activates the relevant trigger.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question p-3">
+                        <div class="d-flex justify-content-between">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, incidunt?</p>
+                            <a class="text-white" data-bs-toggle="collapse" href="#collapseExample4" role="button"
+                                aria-expanded="false" aria-controls="collapseExample">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white"
+                                    class="bi bi-arrow-bar-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5M8 6a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L7.5 12.293V6.5A.5.5 0 0 1 8 6" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="collapse" id="collapseExample4">
+                            <div class="card card-body bg-transparent mt-3">
+                                Some placeholder content for the collapse component. This panel is hidden by default but
+                                revealed when the user activates the relevant trigger.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question p-3">
+                        <div class="d-flex justify-content-between">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, incidunt?</p>
+                            <a class="text-white" data-bs-toggle="collapse" href="#collapseExample5" role="button"
+                                aria-expanded="false" aria-controls="collapseExample">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white"
+                                    class="bi bi-arrow-bar-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5M8 6a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L7.5 12.293V6.5A.5.5 0 0 1 8 6" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="collapse" id="collapseExample5">
+                            <div class="card card-body bg-transparent mt-3">
+                                Some placeholder content for the collapse component. This panel is hidden by default but
+                                revealed when the user activates the relevant trigger.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question p-3">
+                        <div class="d-flex justify-content-between">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, incidunt?</p>
+                            <a class="text-white" data-bs-toggle="collapse" href="#collapseExample6" role="button"
+                                aria-expanded="false" aria-controls="collapseExample">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white"
+                                    class="bi bi-arrow-bar-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5M8 6a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L7.5 12.293V6.5A.5.5 0 0 1 8 6" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="collapse" id="collapseExample6">
+                            <div class="card card-body bg-transparent mt-3">
+                                Some placeholder content for the collapse component. This panel is hidden by default but
+                                revealed when the user activates the relevant trigger.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
