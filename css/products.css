@@ -4,6 +4,22 @@
 
 body {
     overflow-x: hidden;
+    /* background-color: black; */
+    position: relative;
+}
+
+.container {
+    position: relative;
+    z-index: 10;
+}
+
+nav {
+    z-index: 20;
+    background-color: rgb(27, 27, 27);
+}
+
+#line {
+    z-index: 10;
 }
 
 header {
@@ -11,19 +27,71 @@ header {
     padding: var(--SectionPadding) 10px;
     /* background-color: var(--BlackBackground); */
 }
-header h1{
-    position: relative; 
+
+.triangle1 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-image: url(/imgs/tringlesmallwhite.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+    transition: .5s linear;
+}
+
+.triangle2 {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-image: url(/imgs/tringlesmall.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+    transition: .2s linear;
+
+}
+
+header h1 {
+    position: relative;
     z-index: 11;
 }
 
-.SC{
-    /* width: 100%; */
-    /* height: 100%; */
-    right: 0px;
-    top: 0;
+header p:nth-of-type(1) {
+    letter-spacing: 3px;
+}
+
+.back-text-animation {
+    /* background:red; */
+    width: fit-content;
     z-index: 1;
     position: absolute;
-    /* transform: rotate(90deg); */
+    top: 50%;
+    right: 0;
+    transform: rotate(-90deg);
+    transform-origin: bottom right;
+    /* background-color: red; */
+}
+
+.ml3 {
+    color: var(--OrangeTransparenBackgournd);
+    font-size: 15rem;
+    white-space: nowrap;
+}
+
+
+.ml15 {
+    font-weight: 800;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    text-align: center;
+}
+
+.ml15 .word {
+    display: inline-block;
+    line-height: 1em;
 }
 
 
@@ -32,7 +100,7 @@ header button {
     padding: 10px;
     width: 150px;
     /* color: var(--OrangeText); */
-    color: black;
+    color: white;
     z-index: 0;
 }
 
@@ -53,4 +121,81 @@ header button::before {
 header button:hover::before {
     border-radius: 0px;
     width: 120px;
+}
+
+section.tow {
+    position: relative;
+    z-index: 0;
+}
+
+.questions-container {
+    background-color: rgb(30, 30, 30);
+    /* width: fit-content; */
+    border-radius: 5px;
+    position: relative;
+    z-index: 111;
+}
+
+
+
+
+section.three {
+    min-height: 100vh;
+}
+
+.product-box {
+    max-width: 400px;
+    width: 100%;
+    /* max-height: 300px; */
+    /* height: 100%; */
+    position: relative;
+    /* background-image: url(/imgs/project1.png); */
+}
+
+.product1 {
+    bottom: 50px;
+}
+
+.product2 {
+    bottom: 0px;
+}
+
+.product-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section.three .rows:not(.rows:nth-child(1)) {
+    margin-bottom: 50px;
+}
+
+section.three .rows:nth-of-type(1) {
+    margin-top: 100px;
+}
+
+section.three .layer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.761);
+    color: white;
+    display: grid;
+    place-content: center;
+}
+
+.modal {
+    z-index: 1111111111111111;
+}
+
+.modal-dialog {
+    max-width: 400px;
+    width: 100%;
+    background-color: white;
+    height: 400px;
 }
