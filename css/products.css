@@ -4,7 +4,6 @@
 
 body {
     overflow-x: hidden;
-    /* background-color: black; */
     position: relative;
 }
 
@@ -68,7 +67,7 @@ header p:nth-of-type(1) {
     z-index: 1;
     position: absolute;
     top: 50%;
-    right: 0;
+    right: 0%;
     transform: rotate(-90deg);
     transform-origin: bottom right;
     /* background-color: red; */
@@ -76,52 +75,51 @@ header p:nth-of-type(1) {
 
 .ml3 {
     color: var(--OrangeTransparenBackgournd);
-    font-size: 15rem;
+    font-size: 13rem;
     white-space: nowrap;
+    overflow: hidden;
 }
 
 
-.ml15 {
-    font-weight: 800;
-    font-size: 3rem;
+.ml1,
+.ml2 {
+    font-weight: 700;
+    font-size: 2.5rem;
     text-transform: uppercase;
     letter-spacing: 0.5em;
     text-align: center;
 }
 
-.ml15 .word {
+.ml1 .letter,
+.ml2 .letter {
     display: inline-block;
     line-height: 1em;
 }
 
 
-
-header button {
+header a {
     padding: 10px;
     width: 150px;
-    /* color: var(--OrangeText); */
-    color: white;
-    z-index: 0;
 }
 
-header button::before {
+header a::before {
     content: '';
     position: absolute;
-    left: 15px;
-    transform: translateY(-50%);
-    top: 50%;
+    left: 0px;
+    bottom: 7px;
     width: 30px;
     height: 30px;
-    background-color: var(--OrangeTransparenBackgournd);
+    background-color: var(--BlackTransparent);
     z-index: -1;
     border-radius: 50%;
     transition: .5s ease;
 }
 
-header button:hover::before {
+header a:hover::before {
     border-radius: 0px;
-    width: 120px;
+    width: 160px;
 }
+
 
 section.tow {
     position: relative;
@@ -173,6 +171,8 @@ section.three .rows:not(.rows:nth-child(1)) {
     margin-bottom: 50px;
 }
 
+
+
 section.three .rows:nth-of-type(1) {
     margin-top: 100px;
 }
@@ -198,4 +198,21 @@ section.three .layer {
     width: 100%;
     background-color: white;
     height: 400px;
+}
+
+
+
+
+@media (max-width:767px) {
+    section.three .rows:not(.rows:nth-child(1)) {
+        margin-bottom: 00px;
+    }
+
+    .product1 {
+        bottom: 0px;
+    }
+    .ml1,
+    .ml2 {
+        font-size: 2rem;
+    }
 }
