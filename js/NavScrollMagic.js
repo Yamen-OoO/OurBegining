@@ -22,12 +22,12 @@ function ChangeNav(){
             .on("enter" , function(){
                 // console.log('hello im on')
                 navBackground.classList.add("bg-orange2")
-                navBackground.classList.remove("bg-transparent")
+                navBackground.classList.remove("bg-nav-black")
                 startaproject.classList.add('textGray')
                 startaproject.classList.remove('text-white')
             }).on("leave" , function(){
                 navBackground.classList.remove("bg-orange2")
-                navBackground.classList.add("bg-transparent")
+                navBackground.classList.add("bg-nav-black")
                 startaproject.classList.add('text-white')
                 startaproject.classList.remove('textGray')
                 // console.log('hello im out')

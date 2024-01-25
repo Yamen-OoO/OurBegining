@@ -19,7 +19,8 @@
     --GrayText: #8b8b8b;
     --SectionPadding: 100px;
     --SectionTitle: 4.3rem;
-    --SectionTitle2: 3.5rem
+    --SectionTitle2: 3.5rem;
+    /* --BlackNavBAr : rgb(27, 27, 27); */
 }
 h1,
 h2,
@@ -29,7 +30,9 @@ p,
 div {
     margin: 0;
 }
-
+body{
+    overflow-x: hidden !important;
+}
 a {
     text-decoration: none;
 }
@@ -53,6 +56,9 @@ a {
 }
 .bg-orange2{
     background-color: var(--OrangeBackgournd);
+}
+.bg-nav-black{
+    background-color: var(--BlackBackground);
 }
 
 .textGray {
@@ -140,7 +146,8 @@ nav {
     z-index: 1000000;
     padding: 10px 0;
     /* background-color: transparent; */
-    transition: 2s ease;
+    transition: .4s ease !important;
+    background-color: var(--BlackBackground);
 }
 
 nav .container a.startaproject {
@@ -176,7 +183,7 @@ nav .menu svg {
 
 nav .nav-links {
     min-height: 100vh;
-    padding-top: 140px;
+    padding-top: 100px;
     background-color: #252525;
     clip-path: circle(0% at 90% 30%);
     /* clip-path: circle(0% at 90% 10%); */
@@ -210,6 +217,7 @@ nav .menu-left-word {
     transform: scaleX(1.2);
     transition: .5s ease;
     left: -20px;
+    font-size: 3rem;
 }
 
 .nav-links .container .menu-left ul li a:hover {

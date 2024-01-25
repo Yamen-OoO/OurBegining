@@ -1,4 +1,4 @@
-let tringlesNumber = 30
+let tringlesNumber = 40
 for (let i = 0; i <= tringlesNumber - 1; i++) {
     let tringle = document.createElement("div")
     if (i < 15) {

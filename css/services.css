@@ -11,12 +11,13 @@ header {
     padding: var(--SectionPadding) 10px;
     /* background-color: var(--BlackBackground); */
 }
-header h1{
-    position: relative; 
+
+header h1 {
+    position: relative;
     z-index: 11;
 }
-/* change the content , fix first section  */
 
+/* change the content , fix first section  */
 
 
 
@@ -45,7 +46,14 @@ section.one .box p {
     /* width: min(100%, 800px); */
     width: min(100%, 700px);
     font-size: 1.6rem;
+
     /* background-color: red; */
+}
+
+section.tow .text-left::first-line,
+section.tow .text-right::first-line {
+    background-color: var(--OrangeText);
+    color: white;
 }
 
 .circle {
@@ -99,7 +107,7 @@ section.one .circle:nth-child(3) {
 
 section.one .circle:nth-child(4) {
     left: 160px;
-    top:720px;
+    top: 720px;
     /* background-color: green; */
 
 }
@@ -113,24 +121,27 @@ section.one .circle:nth-child(5) {
 
 section.one .circle:nth-child(6) {
     right: 120px;
-    top:550px;
+    top: 550px;
     /* background-color: purple; */
 
 }
+
 section.one .circle:nth-child(7) {
     right: 460px;
     top: 150px;
     /* background-color: white; */
 }
+
 section.one .circle:nth-child(8) {
     right: 90px;
     bottom: 0px;
     /* background-color: black; */
 
 }
+
 section.one .circle:nth-child(9) {
     left: 50%;
-    bottom:20px;
+    bottom: 20px;
     /* background-color: brown; */
 }
 
@@ -220,6 +231,7 @@ img.stars4 {
     transition: .5s ease;
     /* overflow: hidden; */
 }
+
 .project1 {
     top: 300px;
 }
@@ -228,9 +240,11 @@ img.stars4 {
 .project3 {
     top: 400px;
 }
+
 .project4 {
     top: 200px;
 }
+
 .project-img {
     position: absolute;
     left: 0;
@@ -333,9 +347,9 @@ img.stars4 {
         z-index: 0;
     }
 
-    section.one .box{
+    section.one .box {
         min-height: 40vh;
-    } 
+    }
 }
 
 @media (max-width:500px) {
@@ -356,6 +370,7 @@ img.stars4 {
     .project3 {
         top: 300px;
     }
+
     .project4 {
         top: 100px;
     }
@@ -389,11 +404,16 @@ img.stars4 {
 
 
 .product-box {
-    max-width: 400px;
-    width: 100%;
-    max-height: 400px;
-    height: 100%;
     /* background-image: url(/imgs/project1.png); */
+    object-fit: cover;
+    box-shadow: 0 5px 10px black;
+}
+.product-box img{
+    max-width: 350px;
+    width: 100%;
+    height: 350px;
+    /* height: 100%; */
+    object-fit: cover;
 }
 
 /* @media (max-width:575px) { */
@@ -415,10 +435,3 @@ img.stars4 {
 }
 
 @media (max-width:300px) {}
-
-
-
-
-
-
-
