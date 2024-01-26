@@ -1,7 +1,7 @@
-let tringlesNumber = 40
+let tringlesNumber = 50
 for (let i = 0; i <= tringlesNumber - 1; i++) {
     let tringle = document.createElement("div")
-    if (i < 15) {
+    if (i < 25) {
         tringle.classList.add("triangle1")
     }
     else {

@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SpotCode portfolio 4">
+    <title>Protfolio 4</title text-start>
+    <link rel="stylesheet" href="style.min.css">
+    <link rel="stylesheet" href="library.min.css">
+    <link rel='icon' href="/imgs/imagecompressor/logoOrange.png" >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+
+    <button style="right: 10%; bottom: 10%; z-index: 5; display: none;"
+        class="go-top theme-border-1 p-2  justify-content-center align-items-center position-fixed fw-bold text-white rounded-circle maincolor-background-1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white"
+            class="bi bi-arrow-up bg-transparent" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5" />
+        </svg>
+    </button>
+
+
+    <!-- ! remove from the paid version -->
+    <div class="color-switcher-container">
+        <button class="switcher-button p-2 border-0 maincolor-background-3"><svg xmlns="http://www.w3.org/2000/svg"
+                width="23" height="23" fill="white" class="bi bi-gear" viewBox="0 0 16 16">
+                <path
+                    d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z" />
+                <path
+                    d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z" />
+            </svg></button>
+        <div class="menu">
+            <h5 class="text-center maincolor-text-1">Color Switcher</h5>
+            <hr class="my-2">
+            <ul class="d-flex justify-content-around p-0">
+                <li>
+                    <button class="bg-transparent border-0" data-color="orange">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="orange"
+                            class="bi bi-brush-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M15.825.12a.5.5 0 0 1 .132.584c-1.53 3.43-4.743 8.17-7.095 10.64a6.067 6.067 0 0 1-2.373 1.534c-.018.227-.06.538-.16.868-.201.659-.667 1.479-1.708 1.74a8.118 8.118 0 0 1-3.078.132 3.659 3.659 0 0 1-.562-.135 1.382 1.382 0 0 1-.466-.247.714.714 0 0 1-.204-.288.622.622 0 0 1 .004-.443c.095-.245.316-.38.461-.452.394-.197.625-.453.867-.826.095-.144.184-.297.287-.472l.117-.198c.151-.255.326-.54.546-.848.528-.739 1.201-.925 1.746-.896.126.007.243.025.348.048.062-.172.142-.38.238-.608.261-.619.658-1.419 1.187-2.069 2.176-2.67 6.18-6.206 9.117-8.104a.5.5 0 0 1 .596.04z" />
+                        </svg>
+                    </button>
+                </li>
+                <li>
+                    <button class="bg-transparent border-0" data-color="red">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="red"
+                            class="bi bi-brush-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M15.825.12a.5.5 0 0 1 .132.584c-1.53 3.43-4.743 8.17-7.095 10.64a6.067 6.067 0 0 1-2.373 1.534c-.018.227-.06.538-.16.868-.201.659-.667 1.479-1.708 1.74a8.118 8.118 0 0 1-3.078.132 3.659 3.659 0 0 1-.562-.135 1.382 1.382 0 0 1-.466-.247.714.714 0 0 1-.204-.288.622.622 0 0 1 .004-.443c.095-.245.316-.38.461-.452.394-.197.625-.453.867-.826.095-.144.184-.297.287-.472l.117-.198c.151-.255.326-.54.546-.848.528-.739 1.201-.925 1.746-.896.126.007.243.025.348.048.062-.172.142-.38.238-.608.261-.619.658-1.419 1.187-2.069 2.176-2.67 6.18-6.206 9.117-8.104a.5.5 0 0 1 .596.04z" />
+                        </svg>
+                    </button>
+                </li>
+                <li>
+                    <button class="bg-transparent border-0" data-color="blue">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="lightseagreen"
+                            class="bi bi-brush-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M15.825.12a.5.5 0 0 1 .132.584c-1.53 3.43-4.743 8.17-7.095 10.64a6.067 6.067 0 0 1-2.373 1.534c-.018.227-.06.538-.16.868-.201.659-.667 1.479-1.708 1.74a8.118 8.118 0 0 1-3.078.132 3.659 3.659 0 0 1-.562-.135 1.382 1.382 0 0 1-.466-.247.714.714 0 0 1-.204-.288.622.622 0 0 1 .004-.443c.095-.245.316-.38.461-.452.394-.197.625-.453.867-.826.095-.144.184-.297.287-.472l.117-.198c.151-.255.326-.54.546-.848.528-.739 1.201-.925 1.746-.896.126.007.243.025.348.048.062-.172.142-.38.238-.608.261-.619.658-1.419 1.187-2.069 2.176-2.67 6.18-6.206 9.117-8.104a.5.5 0 0 1 .596.04z" />
+                        </svg>
+                    </button>
+                </li>
+                <li>
+                    <button class="bg-transparent border-0" data-color="green">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green"
+                            class="bi bi-brush-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M15.825.12a.5.5 0 0 1 .132.584c-1.53 3.43-4.743 8.17-7.095 10.64a6.067 6.067 0 0 1-2.373 1.534c-.018.227-.06.538-.16.868-.201.659-.667 1.479-1.708 1.74a8.118 8.118 0 0 1-3.078.132 3.659 3.659 0 0 1-.562-.135 1.382 1.382 0 0 1-.466-.247.714.714 0 0 1-.204-.288.622.622 0 0 1 .004-.443c.095-.245.316-.38.461-.452.394-.197.625-.453.867-.826.095-.144.184-.297.287-.472l.117-.198c.151-.255.326-.54.546-.848.528-.739 1.201-.925 1.746-.896.126.007.243.025.348.048.062-.172.142-.38.238-.608.261-.619.658-1.419 1.187-2.069 2.176-2.67 6.18-6.206 9.117-8.104a.5.5 0 0 1 .596.04z" />
+                        </svg>
+                    </button>
+                </li>
+                <li>
+                    <button class="bg-transparent border-0" data-color="purple">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="purple"
+                            class="bi bi-brush-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M15.825.12a.5.5 0 0 1 .132.584c-1.53 3.43-4.743 8.17-7.095 10.64a6.067 6.067 0 0 1-2.373 1.534c-.018.227-.06.538-.16.868-.201.659-.667 1.479-1.708 1.74a8.118 8.118 0 0 1-3.078.132 3.659 3.659 0 0 1-.562-.135 1.382 1.382 0 0 1-.466-.247.714.714 0 0 1-.204-.288.622.622 0 0 1 .004-.443c.095-.245.316-.38.461-.452.394-.197.625-.453.867-.826.095-.144.184-.297.287-.472l.117-.198c.151-.255.326-.54.546-.848.528-.739 1.201-.925 1.746-.896.126.007.243.025.348.048.062-.172.142-.38.238-.608.261-.619.658-1.419 1.187-2.069 2.176-2.67 6.18-6.206 9.117-8.104a.5.5 0 0 1 .596.04z" />
+                        </svg>
+                    </button>
+                </li>
+                <li>
+                    <button class="bg-transparent border-0" data-color="darkBlue">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="blue"
+                            class="bi bi-brush-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M15.825.12a.5.5 0 0 1 .132.584c-1.53 3.43-4.743 8.17-7.095 10.64a6.067 6.067 0 0 1-2.373 1.534c-.018.227-.06.538-.16.868-.201.659-.667 1.479-1.708 1.74a8.118 8.118 0 0 1-3.078.132 3.659 3.659 0 0 1-.562-.135 1.382 1.382 0 0 1-.466-.247.714.714 0 0 1-.204-.288.622.622 0 0 1 .004-.443c.095-.245.316-.38.461-.452.394-.197.625-.453.867-.826.095-.144.184-.297.287-.472l.117-.198c.151-.255.326-.54.546-.848.528-.739 1.201-.925 1.746-.896.126.007.243.025.348.048.062-.172.142-.38.238-.608.261-.619.658-1.419 1.187-2.069 2.176-2.67 6.18-6.206 9.117-8.104a.5.5 0 0 1 .596.04z" />
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <nav class="navbar navbar-expand-md position-fixed py-0 top-0 start-0 w-100  ">
+        <div class="container">
+            <a class="navbar-brand text-white fw-bold fs-4" href="#home">Huda</a>
+            <div class="d-flex gap-4 align-items-center">
+                <p class="my-0 d-sm-block d-none text-white">Huda.21da@gmail.com</p>
+                <p class="my-0 d-sm-block d-none text-white">0964 3233 ---</p>
+                <button class="border-0 d-flex theme-background-1 flex-column gap-2 py-3 px-2 d-block" type="button"
+                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+        </div>
+    </nav>
+    <div class="offcanvas offcanvas-start theme-background-2" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <ul class="ms-2 d-flex flex-column gap-4 navigation  p-4 ">
+            <li class="">
+                <a class="fw-light  text-decoration-none fs-4 fw-normal" href="#home">Home</a>
+            </li>
+            <li class="">
+                <a class="fw-light  text-decoration-none fs-4 fw-normal" href="#about">About</a>
+            </li>
+            <li class="">
+                <a class="fw-light  text-decoration-none fs-4 fw-normal" href="#services">Services</a>
+            </li>
+            <li class="">
+                <a class="fw-light  text-decoration-none fs-4 fw-normal" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="">
+                <a class="fw-light  text-decoration-none fs-4 fw-normal" href="#news">News</a>
+            </li>
+            <li class="">
+                <a class="fw-light  text-decoration-none fs-4 fw-normal" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle theme-text-1 fs-4 fw-normal" data-bs-toggle="dropdown" href="#"
+                    role="button" aria-expanded="false">Theme</a>
+                <ul class="dropdown-menu theme-border-1 ">
+                    <li><a class="dropdown-item theme-toggler theme-text-1" style="cursor: pointer;"
+                            data-theme="light">Light</a></li>
+                    <li><a class="dropdown-item theme-toggler theme-text-1" style="cursor: pointer;"
+                            data-theme="dark">Dark</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="  position-absolute bottom-0 px-4">
+            <p class="my-0 d-sm-block d-none theme-text-1">Huda.21da@gmail.com</p>
+            <p class="my-0 d-sm-block d-none theme-text-1 mb-3">0964 3233 ...</p>
+            <ul class="d-flex  align-items-center gap-3 p-0">
+                <li class="icon-container p-1 theme-border-2 rounded-circle d-flex justify-content-center align-items-center"
+                    ><a href="##">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="black" class="bi bi-facebook"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                        </svg>
+                    </a></li>
+                <li class="icon-container p-1 theme-border-2 rounded-circle d-flex justify-content-center align-items-center"
+                    ><a href="##">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="black" class="bi bi-twitter-x"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z" />
+                        </svg>
+                    </a></li>
+    
+                <li class="icon-container p-1 theme-border-2 rounded-circle d-flex justify-content-center align-items-center"
+                    ><a href="##">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="black" class="bi bi-instagram"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                        </svg>
+                    </a></li>
+            </ul>
+        </div>
+    </div>
+    <header id="home" class="hero d-flex align-items-center d-flex justify-content-center align-items-center theme-background-1">
+        <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="white" fill-opacity="1"
+                d="M0,0L120,42.7C240,85,480,171,720,197.3C960,224,1200,192,1320,176L1440,160L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z">
+            </path>
+        </svg> 
+        <div class="container">
+            <div class="row justify-content-md-between justify-content-cetner position-relative z-1">
+                <div class="col-md-7 col-12 py-5 order-md-0 order-1 ">
+                    <h1 class=" fw-bold theme-text-2">HI...I'M Huda</h1>
+                    <h1 class=" fw-bold text-white maincolor-background-1 p-0 " style="width: fit-content;white-space: nowrap;">
+                        CREATIVE DESIGNER</h1>
+                    <p class="sectionLittleP my-4 mb-5 theme-text-2">I'm a passionate UI/UX designer with a mission to create
+                        delightful and intuitive digital
+                        experiences. With a strong foundation in design principles and a keen eye for detail, I
+                        specialize in translating complex ideas into user-friendly interfaces that captivate and engage.
+                    </p>
+                    <a class="button1 text-decoration-none me-4" href="#services">
+                        Services
+                    </a>
+                    <a class="button1 text-decoration-none" href="#contact">
+                        Let's Talk
+                    </a>
+                </div>
+                <div class="col-md-5 col-12 order-md-1 order-0 d-flex justify-content-center">
+                    <div class=" img-box position-relative">
+                        <img class="w-100 object-fit-cover h-100" src="./imgs/imagecompressor/header-min.jpg" loading="lazy" alt="hero image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="position-absolute left-50 arrow fw-bold d-md-block d-none" href="#about">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-down fw-bold" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1"/>
+              </svg>
+        </a>
+    </header>
+
+
+
+    <section id="about" class="about theme-background-2 position-relative" id="about">
+        <div class="container z-2 position-relative">
+            <div class="section-intro-text text-center mb-5">
+                <h1 class=" d-inline theme-text-1">About Me</h1>
+            </div>
+
+
+            <div class="row justify-content-between gap-md-0 gap-5">
+
+                <div class="col-12 col-md-6 d-lg-flex  justify-content-center" data-aos="fade">
+                    <div class="overflow-hidden img-box">
+                        <img class="w-100 object-fit-cover h-100" src="./imgs/imagecompressor/about2-min.jpg" loading="lazy" alt="about section image">
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 col-12 theme-background-2 py-3 px-3 ">
+                    <h4 class="maincolor-text-1 mb-4">Biograghy</h4>
+                    <div class="d-flex justify-content-between justify-content-sm-between flex-lg-nowrap flex-md-wrap flex-sm-nowrap flex-wrap m-0 mb-3 gap-3">
+                        <div class="d-flex maincolor-background-1 text-white p-1 rounded bio-container">
+                            <span class=" me-1">First Name :</span>
+                            <span class=" ">Ahmed</span>
+                        </div>
+                       
+                        <div class="d-flex maincolor-background-1 text-white p-1 rounded bio-container">
+                            <span class=" me-1">Last
+                                Name :</span> <span>Alsayed</span>
+                        </div>
+                        <div class="d-flex maincolor-background-1 text-white p-1 rounded bio-container">
+                            <span class=" me-1">From
+                                :</span> <span class="text-start">Syria</span>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between justify-content-sm-between flex-lg-nowrap flex-md-wrap flex-sm-nowrap flex-wrap  m-0 mb-3 gap-3">
+                        
+                        <div class="d-flex maincolor-background-1 text-white p-1 rounded bio-container">
+                            <span class=" me-1">Age
+                                :</span> <span class="text-start">25</span>
+                        </div>
+                        <div class="d-flex maincolor-background-1 text-white p-1 rounded bio-container">
+                            <span class=" me-1">Avaliable
+                                :</span> <span>Yes</span>
+                        </div>
+                        <div class="d-flex maincolor-background-1 text-white p-1 rounded bio-container">
+                            <span class=" me-1">Residence :</span>
+                            <span>Al Mazah</span>
+                        </div>
+
+                    </div>
+                    <h4 class="maincolor-text-1 my-4 mt-5">Skills</h4>
+                    <div class="row m-0 justify-content-between">
+                        <div class="col-5 p-0">
+                            <div class="mb-3">
+                                <p class="theme-text-3 m-0 skill py-1">
+                                    Figma</p>
+
+                            </div>
+                            <div class="mb-3">
+                                <p class="theme-text-3 m-0 skill py-1">
+                                    Adobe Xd</p>
+
+                            </div>
+                            <div class="mb-3">
+                                <p class="theme-text-3 m-0 skill py-1">
+                                    Adobe Illustrator</p>
+
+                            </div>
+                            <div class="mb-3">
+                                <p class="theme-text-3 m-0 skill py-1">
+                                    Prototyping</p>
+
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <div class="mb-3">
+                                <p class="theme-text-3 m-0 skill py-1">
+                                    Sketch</p>
+
+                            </div>
+                            <div class="mb-3">
+                                <p class="theme-text-3 m-0 skill py-1">
+                                    Problem-Solving</p>
+                            </div>
+                            <div class="mb-3">
+                                <p class="theme-text-3 m-0 skill py-1">
+                                    Communication</p>
+
+                            </div>
+                            <div class="mb-3">
+                                <p class="theme-text-3 m-0 skill py-1">
+                                    Collaboration</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="d-flex align-items-center px-3 py-2 gap-2 maincolor-background-1 mt-4 border-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
+                            class="bi bi-download" viewBox="0 0 16 16">
+                            <path
+                                d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
+                            <path
+                                d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                        </svg>
+                        <p class="m-0 text-white">Download CV</p>
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="container pt-5">
+
+            <div class="section-intro-text text-center mb-5">
+                <h1 class=" d-inline theme-text-1">Education <span class="maincolor-text-1"> & </span> Experience</h1>
+            </div>
+            <div class="row gap-md-0 gap-3 justify-content-center">
+                <div class="col-10 col-md-6 " data-aos="fade">
+                    <h3 class="mb-5 text-center maincolor-text-2">EDUCATION</h3>
+                    <div
+                        class="cardd theme-background-2 position-relative ps-5 border border-0 border-start border-2 mb-5">
+                        <div
+                            class="icon position-absolute d-flex justify-content-center align-items-center p-2 border-1 border rounded-circle ">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white"
+                                class="bi bi-book" viewBox="0 0 16 16">
+                                <path
+                                    d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783" />
+                            </svg>
+                        </div>
+                        <h6 class="date mb-3 bg-black fw-bold text-white p-2 d-inline-block rounded-2">2023 - present
+                        </h6>
+                        <h5 class="mb-3 theme-text-1">Computer Science</h5>
+                        <p class="sectionLittleP theme-text-3">Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit.
+                            Perferendis voluptatem sunt
+                            obcaecati illum. Dolore, itaque!</p>
+
+                    </div>
+                    <div
+                        class="cardd theme-background-2 position-relative ps-5 border border-0 border-start border-2 mb-5">
+                        <div
+                            class="icon position-absolute d-flex justify-content-center align-items-center p-2 border-1 border rounded-circle ">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white"
+                                class="bi bi-book" viewBox="0 0 16 16">
+                                <path
+                                    d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783" />
+                            </svg>
+                        </div>
+                        <h6 class="date mb-3 bg-black fw-bold text-white p-2 d-inline-block rounded-2">2023 - present
+                        </h6>
+                        <h5 class="mb-3 theme-text-1">Computer Science</h5>
+                        <p class="sectionLittleP theme-text-3">Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit.
+                            Perferendis voluptatem sunt
+                            obcaecati illum. Dolore, itaque!</p>
+
+                    </div>
+                    <div
+                        class="cardd theme-background-2 position-relative ps-5 border border-0 border-start border-2 mb-5">
+                        <div
+                            class="icon position-absolute d-flex justify-content-center align-items-center p-2 border-1 border rounded-circle ">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white"
+                                class="bi bi-book" viewBox="0 0 16 16">
+                                <path
+                                    d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783" />
+                            </svg>
+                        </div>
+                        <h6 class="date mb-3 bg-black fw-bold text-white p-2 d-inline-block rounded-2">2023 - present
+                        </h6>
+                        <h5 class="mb-3 theme-text-1">Computer Science</h5>
+                        <p class="sectionLittleP theme-text-3">Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit.
+                            Perferendis voluptatem sunt
+                            obcaecati illum. Dolore, itaque!</p>
+
+                    </div>
+                </div>
+                <div class="col-10 col-md-6 " data-aos="fade">
+                    <h3 class="mb-5 text-center maincolor-text-2">EXPERIENCE</h3>
+                    <div
+                        class="cardd theme-background-2 position-relative ps-5 border border-0 border-start border-2 mb-5">
+                        <div
+                            class="icon position-absolute d-flex justify-content-center align-items-center p-2 border-1 border rounded-circle ">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white"
+                                class="bi bi-book" viewBox="0 0 16 16">
+                                <path
+                                    d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783" />
+                            </svg>
+                        </div>
+                        <h6 class="date mb-3 bg-black fw-bold text-white p-2 d-inline-block rounded-2">2023 - present
+                        </h6>
+                        <h5 class="mb-3 theme-text-1">Computer Science</h5>
+                        <p class="sectionLittleP theme-text-3">Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit.
+                            Perferendis voluptatem sunt
+                            obcaecati illum. Dolore, itaque!</p>
+
+                    </div>
+                    <div
+                        class="cardd theme-background-2 position-relative ps-5 border border-0 border-start border-2 mb-5">
+                        <div
+                            class="icon position-absolute d-flex justify-content-center align-items-center p-2 border-1 border rounded-circle ">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white"
+                                class="bi bi-book" viewBox="0 0 16 16">
+                                <path
+                                    d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783" />
+                            </svg>
+                        </div>
+                        <h6 class="date mb-3 bg-black fw-bold text-white p-2 d-inline-block rounded-2">2023 - present
+                        </h6>
+                        <h5 class="mb-3 theme-text-1">Computer Science</h5>
+                        <p class="sectionLittleP theme-text-3">Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit.
+                            Perferendis voluptatem sunt
+                            obcaecati illum. Dolore, itaque!</p>
+
+                    </div>
+                    <div
+                        class="cardd theme-background-2 position-relative ps-5 border border-0 border-start border-2 mb-5">
+                        <div
+                            class="icon position-absolute d-flex justify-content-center align-items-center p-2 border-1 border rounded-circle ">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white"
+                                class="bi bi-book" viewBox="0 0 16 16">
+                                <path
+                                    d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783" />
+                            </svg>
+                        </div>
+                        <h6 class="date mb-3 bg-black fw-bold text-white p-2 d-inline-block rounded-2">2023 - present
+                        </h6>
+                        <h5 class="mb-3 theme-text-1">Computer Science</h5>
+                        <p class="sectionLittleP theme-text-3">Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit.
+                            Perferendis voluptatem sunt
+                            obcaecati illum. Dolore, itaque!</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="services" class="services py-5 position-relative theme-background-2" id="services">
+        <div class="back-layer"></div>
+        <div class="container-fluid ">
+            <div class="section-intro-text text-center mb-5">
+                <h1 class=" d-inline theme-text-1">Services</h1>
+            </div>
+            <div class="rows d-flex flex-row flex-sm-nowrap flex-wrap gap-4 my-4">
+                <div data-aos="fade" data-aos-delay="400"
+                    class="cardd z-1 theme-background-1 py-5 p-3 gap-3 d-flex flex-column justify-content-center align-items-center">
+                    <div class="icon-container">
+                        <div class="icon   maincolor-background-1 p-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white"
+                                class="bi bi-file-image" viewBox="0 0 16 16">
+                                <path d="M8.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+                                <path
+                                    d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M3 2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v8l-2.083-2.083a.5.5 0 0 0-.76.063L8 11 5.835 9.7a.5.5 0 0 0-.611.076L3 12z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="text text-center mt-2">
+                        <h5 class="theme-text-1">Photos edting</h5>
+                        <p class="sectionLittleP theme-text-3">Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit.
+                            Obcaecati,
+                            provident aliquam assumenda fugit veniam eum.</p>
+                    </div>
+                </div>
+                <div data-aos="fade" data-aos-delay="500"
+                    class="cardd z-1 theme-background-1 py-5 p-3 gap-3 d-flex flex-column justify-content-center align-items-center">
+                    <div class="icon-container">
+                        <div class="icon   maincolor-background-1 p-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white"
+                                class="bi bi-file-image" viewBox="0 0 16 16">
+                                <path d="M8.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+                                <path
+                                    d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M3 2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v8l-2.083-2.083a.5.5 0 0 0-.76.063L8 11 5.835 9.7a.5.5 0 0 0-.611.076L3 12z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="text text-center mt-2">
+                        <h5 class="theme-text-1">Photos edting</h5>
+                        <p class="sectionLittleP theme-text-3">Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit.
+                            Obcaecati,
+                            provident aliquam assumenda fugit veniam eum.</p>
+                    </div>
+                </div>
+                <div data-aos="fade" data-aos-delay="600"
+                    class="cardd z-1 theme-background-1 py-5 p-3 gap-3 d-flex flex-column justify-content-center align-items-center">
+                    <div class="icon-container">
+                        <div class="icon   maincolor-background-1 p-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white"
+                                class="bi bi-file-image" viewBox="0 0 16 16">
+                                <path d="M8.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+                                <path
+                                    d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M3 2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v8l-2.083-2.083a.5.5 0 0 0-.76.063L8 11 5.835 9.7a.5.5 0 0 0-.611.076L3 12z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="text text-center mt-2">
+                        <h5 class="theme-text-1">Photos edting</h5>
+                        <p class="sectionLittleP theme-text-3">Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit.
+                            Obcaecati,
+                            provident aliquam assumenda fugit veniam eum.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="rows d-flex flex-row flex-sm-nowrap flex-wrap gap-4">
+                <div data-aos="fade" data-aos-delay="700"
+                    class="cardd z-1 theme-background-1 py-5 p-3 gap-3 d-flex flex-column justify-content-center align-items-center">
+                    <div class="icon-container">
+                        <div class="icon   maincolor-background-1 p-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white"
+                                class="bi bi-file-image" viewBox="0 0 16 16">
+                                <path d="M8.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+                                <path
+                                    d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M3 2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v8l-2.083-2.083a.5.5 0 0 0-.76.063L8 11 5.835 9.7a.5.5 0 0 0-.611.076L3 12z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="text text-center mt-2">
+                        <h5 class="theme-text-1">Photos edting</h5>
+                        <p class="sectionLittleP theme-text-3">Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit.
+                            Obcaecati,
+                            provident aliquam assumenda fugit veniam eum.</p>
+                    </div>
+                </div>
+                <div data-aos="fade" data-aos-delay="800"
+                    class="cardd z-1 theme-background-1 py-5 p-3 gap-3 d-flex flex-column justify-content-center align-items-center">
+                    <div class="icon-container">
+                        <div class="icon   maincolor-background-1 p-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white"
+                                class="bi bi-file-image" viewBox="0 0 16 16">
+                                <path d="M8.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+                                <path
+                                    d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M3 2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v8l-2.083-2.083a.5.5 0 0 0-.76.063L8 11 5.835 9.7a.5.5 0 0 0-.611.076L3 12z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="text text-center mt-2">
+                        <h5 class="theme-text-1">Photos edting</h5>
+                        <p class="sectionLittleP theme-text-3">Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit.
+                            Obcaecati,
+                            provident aliquam assumenda fugit veniam eum.</p>
+                    </div>
+                </div>
+                <div data-aos="fade" data-aos-delay="900"
+                    class="cardd z-1 theme-background-1 py-5 p-3 gap-3 d-flex flex-column justify-content-center align-items-center">
+                    <div class="icon-container">
+                        <div class="icon   maincolor-background-1 p-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white"
+                                class="bi bi-file-image" viewBox="0 0 16 16">
+                                <path d="M8.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+                                <path
+                                    d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M3 2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v8l-2.083-2.083a.5.5 0 0 0-.76.063L8 11 5.835 9.7a.5.5 0 0 0-.611.076L3 12z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="text text-center mt-2">
+                        <h5 class="theme-text-1">Photos edting</h5>
+                        <p class="sectionLittleP theme-text-3">Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit.
+                            Obcaecati,
+                            provident aliquam assumenda fugit veniam eum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="counter py-4 d-flex justify-content-center align-items-center">
+        <div class="z-1 boxes   d-flex justify-content-between">
+            <div class="box text-center">
+                <h1 data-number="1000">0</h1>
+                <p>Cups of Coffe</p>
+            </div>
+            <div class="box text-center">
+                <h1 data-number="910">0</h1>
+                <p>Cups of Coffe</p>
+            </div>
+            <div class="box text-center">
+                <h1 data-number="120">0</h1>
+                <p>Cups of Coffe</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="portfolio" class="portfolio  theme-background-2" id="projects">
+        <div class="back-layer1"></div>
+        <div class="back-layer2"></div>
+        <div class="container">
+            <div class="section-intro-text text-center mb-5">
+                <h1 class=" d-inline theme-text-1">Portfolio</h1>
+            </div>
+        </div>
+        <!-- Swiper -->
+        <swiper-container class="mySwiper py-4 pt-2" pagination="true" effect="coverflow" grab-cursor="true"
+            centered-slides="true" slides-per-view="auto" coverflow-effect-rotate="0" coverflow-effect-stretch="0"
+            coverflow-effect-depth="200" coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true"
+            autoplay-delay="3000" pauseOnMouseEnter="true" loop="true">
+            <swiper-slide class="project">
+                <div class="w-100 h-100 position-relative" data-bs-toggle="modal" data-bs-target="#modal1">
+                    <h1
+                        class="project-layer position-absolute top-50 start-50 translate-middle maincolor-layer-3 w-100 h-100 d-flex justify-content-center align-items-center text-white">
+                        Project name</h1>
+                    <img loading="lazy" src="./imgs/imagecompressor/projects1-min.jpg" class="w-100 object-fit-cover h-100 " loading="lazy" alt="portfolio project image">
+                </div>
+            </swiper-slide>
+            <swiper-slide class="project">
+                <div class="w-100 h-100 position-relative" data-bs-toggle="modal" data-bs-target="#modal2">
+                    <h1
+                        class="project-layer position-absolute top-50 start-50 translate-middle maincolor-layer-3 w-100 h-100 d-flex justify-content-center align-items-center text-white">
+                        Project name</h1>
+                    <img loading="lazy" src="./imgs/imagecompressor/projects2-min.jpg" class="w-100 object-fit-cover h-100 " loading="lazy" alt="portfolio project image">
+                </div>
+            </swiper-slide>
+            <swiper-slide class="project">
+                <div class="w-100 h-100 position-relative" data-bs-toggle="modal" data-bs-target="#modal3">
+                    <h1
+                        class="project-layer position-absolute top-50 start-50 translate-middle maincolor-layer-3 w-100 h-100 d-flex justify-content-center align-items-center text-white">
+                        Project name</h1>
+                    <img loading="lazy" src="./imgs/imagecompressor/projects3-min.jpg" class="w-100 object-fit-cover h-100 " loading="lazy" alt="portfolio project image">
+                </div>
+            </swiper-slide>
+            <swiper-slide class="project">
+                <div class="w-100 h-100 position-relative" data-bs-toggle="modal" data-bs-target="#modal4">
+                    <h1
+                        class="project-layer position-absolute top-50 start-50 translate-middle maincolor-layer-3 w-100 h-100 d-flex justify-content-center align-items-center text-white">
+                        Project name</h1>
+                    <img loading="lazy" src="./imgs/imagecompressor/projects4-min.jpg" class="w-100 object-fit-cover h-100 " loading="lazy" alt="portfolio project image">
+                </div>
+            </swiper-slide>
+            <swiper-slide class="project">
+                <div class="w-100 h-100 position-relative" data-bs-toggle="modal" data-bs-target="#modal5">
+                    <h1
+                        class="project-layer position-absolute top-50 start-50 translate-middle maincolor-layer-3 w-100 h-100 d-flex justify-content-center align-items-center text-white">
+                        Project name</h1>
+                    <img loading="lazy" src="./imgs/imagecompressor/projects5-min.jpg" class="w-100 object-fit-cover h-100 " loading="lazy" alt="portfolio project image">
+                </div>
+            </swiper-slide>
+            <swiper-slide class="project">
+                <div class="w-100 h-100 position-relative" data-bs-toggle="modal" data-bs-target="#modal6">
+                    <h1
+                        class="project-layer position-absolute top-50 start-50 translate-middle maincolor-layer-3 w-100 h-100 d-flex justify-content-center align-items-center text-white">
+                        Project name</h1>
+                    <img loading="lazy" src="./imgs/imagecompressor/projects6-min.jpg" class="w-100 object-fit-cover h-100 " loading="lazy" alt="portfolio project image">
+                </div>
+            </swiper-slide>
+        </swiper-container>
+
+        <div class="modal fade p-3" id="modal1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog w-100" style="max-width: 800px;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./imgs/imagecompressor/projects1-min.jpg" height="300" class="w-100 object-fit-cover" loading="lazy" alt="portfolio project image">
+                        <div class="project-description mt-3">
+                            <h1 class="project-name maincolor-text-1">The Project Name </h1>
+                            <h6 class="my-3 project-date ">25 August, 2023</h6>
+                            <p class="theme-text-3 sectionLittleP ">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Qui vel fugit iste enim. Nobis, illum. Cum molestiae minima
+                                mollitia animi est blanditiis, corrupti asperiores, ratione possimus nisi explicabo
+                                odit error ducimus eligendi. Veritatis, dicta minima possimus facere porro nam
+                                debitis?</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="modal fade p-3" id="modal2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog w-100" style="max-width: 800px;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./imgs/imagecompressor/projects2-min.jpg" height="300" class="w-100 object-fit-cover" loading="lazy" alt="portfolio project image">
+                        <div class="project-description mt-3">
+                            <h1 class="project-name maincolor-text-1">The Project Name </h1>
+                            <h6 class="my-3 project-date ">25 August, 2023</h6>
+                            <p class="theme-text-3 sectionLittleP ">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Qui vel fugit iste enim. Nobis, illum. Cum molestiae minima
+                                mollitia animi est blanditiis, corrupti asperiores, ratione possimus nisi explicabo
+                                odit error ducimus eligendi. Veritatis, dicta minima possimus facere porro nam
+                                debitis?</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="modal fade p-3" id="modal3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog w-100" style="max-width: 800px;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./imgs/imagecompressor/projects3-min.jpg" height="300" class="w-100 object-fit-cover" loading="lazy" alt="portfolio project image">
+                        <div class="project-description mt-3">
+                            <h1 class="project-name maincolor-text-1">The Project Name </h1>
+                            <h6 class="my-3 project-date ">25 August, 2023</h6>
+                            <p class="theme-text-3 sectionLittleP ">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Qui vel fugit iste enim. Nobis, illum. Cum molestiae minima mollitia
+                                animi est blanditiis, corrupti asperiores, ratione possimus nisi explicabo odit error
+                                ducimus eligendi. Veritatis, dicta minima possimus facere porro nam debitis?</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="modal fade p-3" id="modal4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog w-100" style="max-width: 800px;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./imgs/imagecompressor/projects4-min.jpg" height="300" class="w-100 object-fit-cover" loading="lazy" alt="portfolio project image">
+                        <div class="project-description mt-3">
+                            <h1 class="project-name maincolor-text-1">The Project Name </h1>
+                            <h6 class="my-3 project-date ">25 August, 2023</h6>
+                            <p class="theme-text-3 sectionLittleP ">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Qui vel fugit iste enim. Nobis, illum. Cum molestiae minima
+                                mollitia animi est blanditiis, corrupti asperiores, ratione possimus nisi explicabo
+                                odit error ducimus eligendi. Veritatis, dicta minima possimus facere porro nam
+                                debitis?</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="modal fade p-3" id="modal5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog w-100" style="max-width: 800px;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./imgs/imagecompressor/projects5-min.jpg" height="300" class="w-100 object-fit-cover" loading="lazy" alt="portfolio project image">
+                        <div class="project-description mt-3">
+                            <h1 class="project-name maincolor-text-1">The Project Name </h1>
+                            <h6 class="my-3 project-date ">25 August, 2023</h6>
+                            <p class="theme-text-3 sectionLittleP ">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Qui vel fugit iste enim. Nobis, illum. Cum molestiae minima
+                                mollitia animi est blanditiis, corrupti asperiores, ratione possimus nisi explicabo
+                                odit error ducimus eligendi. Veritatis, dicta minima possimus facere porro nam
+                                debitis?</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade p-3" id="modal6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog w-100" style="max-width: 800px;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./imgs/imagecompressor/projects6-min.jpg" height="300" class="w-100 object-fit-cover" loading="lazy" alt="portfolio project image">
+                        <div class="project-description mt-3">
+                            <h1 class="project-name maincolor-text-1">The Project Name </h1>
+                            <h6 class="my-3 project-date ">25 August, 2023</h6>
+                            <p class="theme-text-3 sectionLittleP ">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Qui vel fugit iste enim. Nobis, illum. Cum molestiae minima
+                                mollitia animi est blanditiis, corrupti asperiores, ratione possimus nisi explicabo
+                                odit error ducimus eligendi. Veritatis, dicta minima possimus facere porro nam
+                                debitis?</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="testimonial position-relative theme-background-2">
+        <div class="back-layer"></div>
+        <div class="container-fluid">
+            <div class="section-intro-text text-center mb-5">
+                <h1 class=" d-inline theme-text-1">TESTIMONIAL</h1>
+            </div>
+            <div class="rows d-flex justify-content-center flex-md-nowrap flex-wrap gap-4">
+                <div class="box theme-background-1">
+                    <div class="row gap-3 justify-content-center mb-3">
+                        <div class="col-md-4 col-12 p-0 d-flex justify-content-center">
+                            <img src="./imgs/imagecompressor/testimonal-min.jpg" class="object-fit-cover" width="120" height="140" loading="lazy" alt="testimonal user image">
+                        </div>
+                        <div class=" d-flex flex-column justify-content-center  col-md-6 col-12">
+                            <h5 class="maincolor-text-2">ROGER SCOTT</h5>
+                            <h6 class="m-0 theme-text-1">MARKETING MANAGER</h6>
+                        </div>
+                    </div>
+                    <p class="theme-text-2">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+                        live the blind texts.</p>
+                </div>
+                <div class="box theme-background-1">
+                    <div class="row gap-3 justify-content-center mb-3">
+                        <div class="col-md-4 col-12 p-0 d-flex justify-content-center">
+                            <img src="./imgs/imagecompressor/testimonal2-min.jpg" class=" object-fit-cover" width="120" height="140" loading="lazy" alt="testimonal user image">
+                        </div>
+                        <div class=" d-flex flex-column justify-content-center  col-md-6 col-12">
+                            <h5 class="maincolor-text-2">ROGER SCOTT</h5>
+                            <h6 class="m-0 theme-text-1">MARKETING MANAGER</h6>
+                        </div>
+                    </div>
+                    <p class="theme-text-2">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+                        live the blind texts.</p>
+                </div>
+                <div class="box theme-background-1">
+                    <div class="row gap-3 justify-content-center mb-3">
+                        <div class="col-md-4 col-12 p-0 d-flex justify-content-center">
+                            <img src="./imgs/imagecompressor/testimonal3-min.jpg" class=" object-fit-cover" width="120" height="140" loading="lazy" alt="testimonal user image">
+                        </div>
+                        <div class=" d-flex flex-column justify-content-center  col-md-6 col-12">
+                            <h5 class="maincolor-text-2">ROGER SCOTT</h5>
+                            <h6 class="m-0 theme-text-1">MARKETING MANAGER</h6>
+                        </div>
+                    </div>
+                    <p class="theme-text-2">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+                        live the blind texts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="news-line py-2 overflow-hidden d-md-block d-none theme-background-2">
+        <div class="news-p position-relative d-flex justify-content-between gap-3">
+            <p class="m-0 fs-4 fw-bold maincolor-text-1">Join me in creating extraordinary designs that captivate and
+                inspire</p>
+            <p class="m-0 fs-4 fw-bold maincolor-text-1">Choose me as your design partner and witness the power of
+                creativity and
+                expertise in transforming your ideas into stunning visuals</p>
+        </div>
+    </div>
+
+    <section id="news" class="news py-5 theme-background-1 position-relative" id="news">
+        <div class="back-layer"></div>
+        <div class="container-fluid  position-relative z-1">
+            <div class="section-intro-text text-center mb-5">
+                <h1 class=" d-inline theme-text-1">News  <span class="maincolor-text-1">  & </span>Updates</h1>
+            </div>
+            <div class="rows d-flex flex-wrap flex-md-nowrap align-items-center justify-content-around gap-5 gap-lg-5">
+                <div data-bs-toggle="modal" data-aos="fade"
+                    class="mt-lg-5 position-relative new  d-flex flex-column  theme-background-2 pb-2"
+                     data-bs-target="#modal7">
+                    <h5 class="position-absolute  bg-white d-flex pe-2 align-items-center"><span
+                            class="h-100 maincolor-background-1 p-3 text-white fw-bold">April</span><span class="ms-1">
+                            22 . 2022</span></h5>
+                    <img src="./imgs/imagecompressor/new1-min.jpg" class="w-100  object-fit-cover" loading="lazy" alt=" updates image">
+                    <div class="description-box p-3 pt-3">
+                        <h5 class="theme-text-1">Lorem, ipsum dolor.</h5>
+                        <p class="sectionLittleP theme-text-3">Lorem ipsum dolor sit amet consectetur adipisicing.
+                        </p>
+                        <button class=" p-2 maincolor-background-1 text-white border-0">see
+                            more</button>
+
+                    </div>
+                </div>
+                <div data-bs-toggle="modal" data-aos="fade"
+                    class="mb-lg-5 position-relative new  d-flex flex-column  theme-background-2 pb-2"
+                     data-bs-target="#modal8">
+                    <h5 class="position-absolute  bg-white d-flex pe-2 align-items-center"><span
+                            class="h-100 maincolor-background-1 p-3 text-white fw-bold">April</span><span class="ms-1">
+                            22 . 2022</span></h5>
+                    <img src="./imgs/imagecompressor/new2-min.jpg" class="w-100  object-fit-cover" loading="lazy" alt=" updates image">
+                    <div class="description-box p-3 pt-3">
+                        <h5 class="theme-text-1">Lorem, ipsum dolor.</h5>
+                        <p class="sectionLittleP theme-text-3">Lorem ipsum dolor sit amet consectetur adipisicing.
+                        </p>
+                        <button class=" p-2 maincolor-background-1 text-white border-0 ">see
+                            more</button>
+
+                    </div>
+                </div>
+                <div data-bs-toggle="modal" data-aos="fade"
+                    class="mt-lg-5 position-relative new  d-flex flex-column  theme-background-2 pb-2"
+                     data-bs-target="#modal9">
+                    <h5 class="position-absolute  bg-white d-flex pe-2 align-items-center"><span
+                            class="h-100 maincolor-background-1 p-3 text-white fw-bold">April</span><span class="ms-1">
+                            22 . 2022</span></h5>
+                    <img src="./imgs/imagecompressor/new3-min.jpg" class="w-100  object-fit-cover" loading="lazy" alt=" updates image">
+                    <div class="description-box p-3 pt-3">
+                        <h5 class="theme-text-1">Lorem, ipsum dolor.</h5>
+                        <p class="sectionLittleP theme-text-3">Lorem ipsum dolor sit amet consectetur adipisicing.
+                        </p>
+                        <button class=" p-2 maincolor-background-1 text-white border-0 ">see
+                            more</button>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="modal fade p-3" id="modal7" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog w-100" style="max-width: 800px;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./imgs/imagecompressor/new1-min.jpg" height="300" class="w-100 object-fit-cover" loading="lazy" alt=" updates image">
+                        <div class="project-description mt-3">
+                            <h1 class="project-name maincolor-text-1">The Project Name </h1>
+                            <h6 class="my-3 project-date ">25 August, 2023</h6>
+                            <p class="theme-text-3 sectionLittleP ">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Qui vel fugit iste enim. Nobis, illum. Cum molestiae minima
+                                mollitia animi est blanditiis, corrupti asperiores, ratione possimus nisi explicabo
+                                odit error ducimus eligendi. Veritatis, dicta minima possimus facere porro nam
+                                debitis?</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade p-3" id="modal8" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog w-100" style="max-width: 800px;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./imgs/imagecompressor/new2-min.jpg" height="300" class="w-100 object-fit-cover" loading="lazy" alt=" updates image">
+                        <div class="project-description mt-3">
+                            <h1 class="project-name maincolor-text-1">The Project Name </h1>
+                            <h6 class="my-3 project-date ">25 August, 2023</h6>
+                            <p class="theme-text-3 sectionLittleP ">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Qui vel fugit iste enim. Nobis, illum. Cum molestiae minima
+                                mollitia animi est blanditiis, corrupti asperiores, ratione possimus nisi explicabo
+                                odit error ducimus eligendi. Veritatis, dicta minima possimus facere porro nam
+                                debitis?</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade p-3" id="modal9" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog w-100" style="max-width: 800px;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./imgs/imagecompressor/new3-min.jpg" height="300" class="w-100 object-fit-cover" loading="lazy" alt=" updates image">
+                        <div class="project-description mt-3">
+                            <h1 class="project-name maincolor-text-1">The Project Name </h1>
+                            <h6 class="my-3 project-date ">25 August, 2023</h6>
+                            <p class="theme-text-3 sectionLittleP ">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Qui vel fugit iste enim. Nobis, illum. Cum molestiae minima
+                                mollitia animi est blanditiis, corrupti asperiores, ratione possimus nisi explicabo
+                                odit error ducimus eligendi. Veritatis, dicta minima possimus facere porro nam
+                                debitis?</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="contact" class="contact theme-background-2 position-relative min-h-100" id="contact">
+        <div class="container">
+            <div class="row d-flex gap-lg-0 gap-4 justify-content-between position-relative">
+                <div class="col-md-5 col-12  sticky-col" data-aos="fade">
+                    <h4 class="mb-4  fw-bold">Let's get in touch</h4>
+                    <p class=" mb-5">
+                        I enjoy discussing new projects and design challenges. Please share as much info, as possible so
+                        we can get the most out of our first catch-up.
+                    </p>
+                    <h5 class=" fw-bold">living in : </h5>
+                    <p class="mb-3 ">Syria ,Damascus</p>
+                    <h5 class=" fw-bold">Call : </h5>
+                    <p class="mb-3 ">(+963) 53346 ---</p>
+                    <h5 class=" fw-bold">Social Profiles</h5>
+                    <ul class="d-flex justify-content-start p-0 gap-3">
+                        <li class="icon-container p-1 border-2  rounded-circle d-flex justify-content-center align-items-center"
+                            style="width: 40px; height: 40px;"><a href="##">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white"
+                                    class="bi bi-facebook" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                </svg>
+                            </a></li>
+                        <li class="icon-container p-1 border-2  rounded-circle d-flex justify-content-center align-items-center"
+                            style="width: 40px; height: 40px;"><a href="##">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white"
+                                    class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                    <path
+                                        d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z" />
+                                </svg>
+                            </a></li>
+
+                        <li class="icon-container p-1 border-2  rounded-circle d-flex justify-content-center align-items-center"
+                            style="width: 40px; height: 40px;"><a href="##">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white"
+                                    class="bi bi-instagram" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                                </svg>
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-12" data-aos="fade">
+                    <div class="section-intro-text text-start mb-5">
+                        <h1 class=" d-inline theme-text-1">Contact Form</h1>
+                    </div>
+                    <form action="">
+                        <input
+                            class="theme-text-1  w-100 bg-transparent d-block w-75 pb-3 ps-3 mb-4"
+                            type="text" placeholder="what is your name">
+                        <input
+                            class="theme-text-1  w-100 bg-transparent d-block w-75 pb-3 ps-3 mb-4"
+                            type="text" placeholder="what is your email">
+                        <textarea name=""
+                            class="bg-transparent theme-text-1 d-block b w-100 w-75 p-3 pb-0 mb-4"
+                            placeholder="how can i help you" id="" cols="30" rows="10"></textarea>
+                        <button class="button1">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright py-2 maincolor-background-3">
+        <div class="text d-flex justify-content-center text-white">
+            <p class="m-0 me-3 sectionLittleP">©Copyright 2023 SpotCode | All Right Reserved.</p>
+            <img src="./imgs/imagecompressor/logoOrange.png" width="25" loading="lazy" alt="">
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script defer  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+
+<script  src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script >
+    AOS.init();
+    AOS.init({once:true});
+</script>
+
+<script type="module" src="script.min.js"></script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+</script>
+
+
+
+
+</html>
