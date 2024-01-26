@@ -11,7 +11,7 @@
     color: white;
 }
 :root {
-    --BlackBackground: #202020;
+    --BlackBackground: #121212;
     --BlackTransparent: #272626;
     --OrangeText: #F95F09;
     --OrangeBackgournd: #ff8945;
@@ -184,7 +184,7 @@ nav .menu svg {
 nav .nav-links {
     min-height: 100vh;
     padding-top: 100px;
-    background-color: #252525;
+    background-color: #181818;
     clip-path: circle(0% at 90% 30%);
     /* clip-path: circle(0% at 90% 10%); */
     -webkit-clip-path: circle(0% at 96% 30%);
